@@ -1,0 +1,48 @@
+
+.home-section {
+  padding: 70px 50px 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.records, .forms {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.records{
+  flex: 2;
+}
+
+.forms{
+  flex: 1;
+}
+
+
+@media (max-width: 768px) {
+  .home-section {
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+  }
+
+  .records, .forms {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .forms{
+    order: -1;
+    max-width: 90%;
+  }
+}
+
+  
+  
