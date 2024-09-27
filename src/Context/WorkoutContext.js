@@ -19,7 +19,7 @@ const WorkoutContext = ({children}) => {
   //get
   const getWorkoutsData = async () => {
 
-    const response = await axios.get('http://localhost:4000/api/workouts', {
+    const response = await axios.get('https://workoutbuddy-backend-1.onrender.com/api/workouts', {
       headers:{
         "Authorization" : `Bearer ${user.token}`
       }

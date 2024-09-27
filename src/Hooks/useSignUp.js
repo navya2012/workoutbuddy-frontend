@@ -14,7 +14,7 @@ const useSignUp = () => {
     const signup = async(email,password) => {
         setError(null)
 
-        const response = await fetch('http://localhost:4000/api/user/signup', {
+        const response = await fetch('https://workoutbuddy-backend-1.onrender.com/api/user/signup', {
             method:'POST',
             headers:{"Content-type" : "application/json"},
             body: JSON.stringify({email, password})

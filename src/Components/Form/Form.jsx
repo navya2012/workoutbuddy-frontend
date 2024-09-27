@@ -25,7 +25,7 @@ const Form = () => {
   const createSubmitData = async (e) => {
     e.preventDefault()
   
-    const response = await axios.post('http://localhost:4000/api/workouts', form,  {
+    const response = await axios.post('https://workoutbuddy-backend-1.onrender.com/api/workouts/newData', form,  {
       headers:{
         "Authorization" : `Bearer ${user?.token}`
       }
@@ -55,7 +55,7 @@ const Form = () => {
     e.preventDefault()
 
     const { _id, title, reps, load } = updateForm
-    await axios.patch(`http://localhost:4000/api/workouts/${_id}`, {
+    await axios.patch(`https://workoutbuddy-backend-1.onrender.com/api/workouts/update/${_id}`, {
       title,
       reps,
       load

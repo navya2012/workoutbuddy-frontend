@@ -17,7 +17,7 @@ const Records = () => {
 
     //delete
     const handleDeleteData = async (_id) => {
-        await axios.delete(`http://localhost:4000/api/workouts/${_id}` ,  {
+        await axios.delete(`https://workoutbuddy-backend-1.onrender.com/api/workouts/delete/${_id}` ,  {
             headers:{
               "Authorization" : `Bearer ${user?.token}`
             }
