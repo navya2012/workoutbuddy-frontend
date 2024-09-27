@@ -19,7 +19,7 @@ const WorkoutContext = ({children}) => {
   //get
   const getWorkoutsData = async () => {
 
-    const response = await axios.get('https://workoutbuddy-backend-1.onrender.com/api/workouts', {
+    const response = await axios.get('https://workoutbuddy-backend-production.up.railway.app/api/workouts', {
       headers:{
         "Authorization" : `Bearer ${user.token}`
       }
