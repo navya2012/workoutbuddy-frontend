@@ -55,7 +55,7 @@ const Form = () => {
     e.preventDefault()
 
     const { _id, title, reps, load } = updateForm
-    await axios.patch(`https://workoutbuddy-backend-1.onrender.com/api/workouts/update/${_id}`, {
+    await axios.patch(`https://workoutbuddy-backend-1.onrender.com/api/workouts/updateData/${_id}`, {
       title,
       reps,
       load
