@@ -17,7 +17,7 @@ const Records = () => {
 
     //delete
     const handleDeleteData = async (_id) => {
-        await axios.delete(`http://localhost:4000/api/workouts/deleteData/${_id}` ,  {
+        await axios.delete(`https://workoutbuddy-backend.vercel.app/api/workouts/deleteData/${_id}` ,  {
             headers:{
               "Authorization" : `Bearer ${user?.token}`
             }
